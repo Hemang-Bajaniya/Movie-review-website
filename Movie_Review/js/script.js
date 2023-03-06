@@ -27,7 +27,7 @@ async function getData(movie_name) {
     btn.innerHTML = `<svg viewBox="25 25 50 50">
     <circle r="20" cy="50" cx="50"></circle>
 </svg>`
-    data = await fetch(`http://www.omdbapi.com/?t=${movie_name}&apikey=${key}`).catch((err) => {setMsg('Error!, Check your internet')
+    data = await fetch(`https://www.omdbapi.com/?t=${movie_name}&apikey=${key}`).catch((err) => {setMsg('Error!, Check your internet')
     btn.removeAttribute('disabled')
     btn.classList.remove('load')
     btn.innerHTML = `Search`})
